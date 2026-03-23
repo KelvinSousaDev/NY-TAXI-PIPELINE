@@ -1,0 +1,35 @@
+# Arquivos Secretos
+.env
+
+# Os arquivos do banco de dados
+data/
+
+# Arquivos Temporarios
+.vscode
+data/temp/
+data/*.csv
+data/*.xlsx
+*.tmp
+/data
+/config
+
+# Ambientes Virtuais
+venv/
+.venv
+env/
+ENV/
+
+# Arquivos gerados pelo Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Airflow
+logs/
+airflow.db
+airflow.cfg
+webserver_config.py
+standalone_admin_password.txt
