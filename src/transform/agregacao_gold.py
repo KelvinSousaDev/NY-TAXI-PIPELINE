@@ -7,7 +7,7 @@ caminho_gold = Path("data/gold/")
 def agregar_dados_gold():
     query_gold = (
         pl.scan_parquet(caminho_silver/"*.parquet")
-        .group_by("PULocationID" as "Zona_Coleta")
+        .group_by("PULocationID")
         .agg(
             pl.col("fare_amount").sum().alias("receita_total"),
             pl.len().alias("total_de_corridas")
