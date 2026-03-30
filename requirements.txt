@@ -1,0 +1,5 @@
+polars
+pandera[polars]
+adbc-driver-postgresql
+python-dotenv
+psycopg2
