@@ -68,7 +68,7 @@ def validar_silver():
             schema.validate(df)
             print(f"Tudo Correto no seu Schema {arquivo.name}")
         except pa.errors.SchemaError as pa_error:
-            print(F"Seu Schema Contém um Erro {pa_error}")
+            print(f"Seu Schema Contém um Erro {pa_error}")
 
 if __name__ == "__main__":
     validar_silver()
